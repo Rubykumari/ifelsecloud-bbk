@@ -19,7 +19,6 @@ export class ChartsComponent implements OnInit {
           label: 'Income',
           data:  [12000, 19000, 3000, 5000, 2000, 3000, 10000, 3000, 9000, 12000, 16000, 4000],
           backgroundColor:'#060650'
-
         },
         {
           label: 'Investment',
