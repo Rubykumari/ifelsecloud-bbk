@@ -1,0 +1,33 @@
+<br><br>
+<div class="transactions">
+    <div class="transHeading flex">
+        <h5>Transaction History</h5>
+        <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome ;border: none;opacity: 0.6;margin-top: -10px;">
+        <div class="filter">
+            <p>Filter</p>
+        </div>
+        <div class="export">
+            <p>Export</p>
+        </div>
+    </div>
+    <br>
+    <div class="transType flex">
+        <p class="arrows">Date</p>
+        <p class="arrows">Name</p>
+        <p class="arrows">Status</p>
+        <p class="arrows">Type</p>
+        <p class="arrows">Time</p>
+        <p class="arrows">Amount</p>
+        <p>Action</p>
+    </div>
+    <div class="transData flex" *ngFor="let transaction of transactions">
+        <li class="arrows">{{transaction.date.substring(0,10)}}</li>
+        <li class="arrows">{{transaction.name}}</li>
+        <li class="arrows" [ngClass]="transaction.status=='Success'?'success':'failed'">{{transaction.status}}</li>
+        <li class="arrows">{{transaction.type}}</li>
+        <li class="arrows">{{transaction.date.substring(11,19)}}</li>
+        <li class="arrows">{{transaction.amount}}</li>
+        <li>...</li>
+    </div>
+</div>
+

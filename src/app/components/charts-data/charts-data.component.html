@@ -1,0 +1,52 @@
+<div class="graphData">
+    <div class="totalBal">
+        <h5>Total Balance</h5>
+        <div>...</div>
+    </div>
+    <h3 class="mt-2 mb-3">$ {{totalBal}}</h3>
+    <div class="bottomBorder"></div>
+    <div class="mPaymentLimit mt-2">
+        <p>Monthly payment limit</p>
+        <div class="limit"><span>${{monthlyPaymentLimit}}</span>/{{totalIncome}}</div>
+    </div>
+    <div class="mPaymentLimit mt-2">
+        <p>Money Statictics</p>
+        <div class="limit">
+            <div class="left">
+                <p>Monthly &nbsp; &nbsp;</p>
+                <!-- <div id="downArrow"></div> -->
+            </div>
+            <div class="dots">...</div>
+        </div>
+    </div>
+    <br>
+    <div class="flex mStatics">
+        <div class="tIncome">
+            <p>Total Income</p>
+            <h4>{{totalIncome}}</h4>
+            <div class="trendColor flex">
+                <p class='trendVal'>{{trendVal}}%</p>
+                <span>&nbsp;from last month</span>
+            </div>
+        </div>
+        <div class="tIncome">
+            <p>Total Expense</p>
+            <h4>{{tExpense}}</h4>
+            <div class="trendColor flex">
+                <p class="expenseTrend">{{expenseTrend}}%</p>
+                <span>&nbsp;from last month</span>
+            </div>
+        </div>
+        <div class="tIncome">
+            <p>Total Investment</p>
+            <h4>{{tInvestment}}</h4>
+            <div class="trendColor flex">
+                <p class="investmenTrend">{{investmenTrend}}%</p>
+                <span>&nbsp;from last month</span>
+            </div>
+        </div>
+    </div>
+    <!-- chart  -->
+    <app-charts></app-charts>
+    <app-transactions></app-transactions>
+</div>

@@ -1,0 +1,28 @@
+<div class="topBar">
+    <div class="stipeContainer" *ngIf="this.isStripeVisible">
+        <div class="topbarStripe">
+            <span>Stay updated on our latest feature by receiving notification from us!</span>
+            <button>Learn More</button>
+        </div>
+        <div class="closeStripe" (click)="hideStripe()">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+    <div class="topMenu">
+        <li class="bankLogo" style="flex-grow: 3;">
+            <img src="../../assets/bank_logo.png" alt="bank_logo">
+            <span>Hexa Bank</span>
+        </li>
+        <li style="flex-grow: 3;font-weight: 800;">Overview</li>
+        <li style="flex-grow: 4; opacity: 0.6;">
+            <input type="text" placeholder="&#xF002; Search anything here.." style="font-family:Arial, FontAwesome ;border: none; font-size: 13px; font-weight: 600;">
+        </li>
+        <li style="flex-grow: 1;">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </li>
+        <li style="flex-grow: 1;">
+            <i class="fa-regular fa-bell"></i>
+        </li>
+
+    </div>
+</div>

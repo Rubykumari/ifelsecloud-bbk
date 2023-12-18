@@ -1,0 +1,48 @@
+.stipeContainer{
+    background-color: #060650;
+    display: flex;
+    justify-content: space-between;
+    .topbarStripe{
+        padding-top: 8px;
+        height: 3rem;
+        flex-grow: 1;
+        text-align: center;
+        span{
+            color: white;
+            text-align: center;
+        }
+        button{
+            border-radius: 8px;
+            margin-left: 13px;
+        }
+
+    }
+    .closeStripe{
+        position: relative;
+        right: 8px;
+        color: white;
+        i{
+            position: relative;
+            color: white;
+            cursor: pointer;
+            right: 0px;
+        }
+    }
+}
+.topMenu{
+    display: flex;
+    color: #060650;
+    margin: 10px 0%;
+    li{
+        list-style-type: none;
+    }
+    .bankLogo{
+        flex-grow: 2;
+        img{
+            width: 45px;
+        }
+        span{
+            font-weight: 800;
+        }
+    }
+}

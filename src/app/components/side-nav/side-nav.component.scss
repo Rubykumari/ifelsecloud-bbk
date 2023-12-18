@@ -1,0 +1,70 @@
+:host {
+    flex-basis: 20%;
+  }
+.authorDetails {
+    display: flex;
+    margin-bottom: 2rem;
+    img {
+        width: 10%;
+    }
+
+    p {
+        position: relative;
+        top: 7px;
+    }
+
+    .arrows {
+        position: relative;
+        bottom: 14px;
+    }
+
+    #uparrow:before {
+        content: '\276F';
+    }
+
+    #downarrow:before {
+        content: '\276E';
+    }
+
+    #uparrow,
+    #downarrow {
+        font-size: 19px;
+        position: absolute;
+        display: inline-block;
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        padding: 10px;
+    }
+
+    #uparrow {
+        top: 15px;
+    }
+
+    #downarrow {
+        top: 5px;
+    }
+}
+.heading{
+    dt{
+        margin-bottom: 2rem;
+    }
+    dd{
+        margin-bottom: 1.5rem;
+        margin-left: 22px;
+        opacity: 0.6;
+    }
+}
+.newPayment{
+    border: 2px dotted #060650;
+    width: 12rem;
+    text-align: center;
+    height: 10rem;
+    padding-top: 42px;
+    border-radius: 6%;
+    .payIcon{
+        font-size: 40px;
+        border: 2px dotted #060650;
+        border-radius: 50%;
+    }
+}

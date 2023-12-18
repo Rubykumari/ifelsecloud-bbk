@@ -1,0 +1,64 @@
+:host {
+    flex-basis: 50%;
+
+    .graphData {
+        margin-left: 4rem;
+        opacity: 0.7;
+
+        .totalBal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottomBorder {
+            width: 11rem;
+            color: #060650;
+            border: 4px solid;
+            border-radius: 10px;
+        }
+
+        .mPaymentLimit {
+            display: flex;
+            justify-content: space-between;
+            .limit{
+                display: flex;
+                .dots{
+                    margin-top: -5px;
+                }
+            }
+            span {
+                font-weight: 700;
+            }
+
+            #downArrow {
+                font-size: 19px;
+                position: absolute;
+                display: inline-block;
+                transform: rotate(90deg);
+                padding: 10px;
+                bottom: 25px;
+                right: 49px;
+            }
+
+            #downArrow::after {
+                content: '\276F';
+            }
+        }
+        .tIncome{
+            flex: 32%;
+            .trendColor{
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.investmenTrend{
+    color: yellow;
+}
+.expenseTrend{
+    color: green;
+}
+.trendVal{
+    color: red;
+}
